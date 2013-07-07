@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RussianPeasantMultiplication {
-	public static int Mul(int i, int j) {
+	public static int mul (int i, int j) {
 		List<Integer> rightSide = new ArrayList<Integer> ();
 		peasantMul(i, j, rightSide);		
 		return sum (rightSide);
 	}
 
-	private static void peasantMul(int i, int j, List<Integer> rightSide) {
+	private static void peasantMul (int i, int j, List<Integer> rightSide) {
 		int leftSide = i;
 		int temp = j;
 		while (leftSide > 0) {
